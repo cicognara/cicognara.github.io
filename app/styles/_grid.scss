@@ -1,0 +1,12 @@
+$susy: (
+  columns: 12,
+  gutters: 1/3,
+  gutter-position: after,
+  container: 1200px
+);
+
+@include border-box-sizing;
+
+.wrap {
+  @include container;
+}
