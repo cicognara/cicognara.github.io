@@ -1,0 +1,26 @@
+// dependencies
+@import "normalize";
+@import "susy";
+
+// components
+@import "grid";
+@import "colors";
+
+.intro {
+  background: $beige;
+
+  h1 {
+    display: block;
+    font: 34px/36px 'Playfair Display', Georgia, serif;
+    letter-spacing: .06em;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    .small {
+      display: block;
+      font-size: 18px;
+      text-transform: none;
+    }
+  }
+}
