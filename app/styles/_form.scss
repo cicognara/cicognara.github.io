@@ -20,12 +20,17 @@ textarea {
     color: $black;
     outline: none;
     padding: 1em;
+    transition: border 0.5s ease-in;
   }
   &[type=submit] {
     background: $brown;
     font-weight: 900;
     text-transform: uppercase;
     border-color: $brown;
+    &:hover {
+      background: $white;
+      transition: background 1s ease-in;
+    }
   }
 }
 
