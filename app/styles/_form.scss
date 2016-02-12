@@ -1,0 +1,37 @@
+form {
+  margin-bottom: 50px;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  color: $black;
+  background-color: $white;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  border: 3px solid $white;
+
+  &:focus {
+    background: $white;
+    box-shadow: 0;
+    border: 3px solid $brown;
+    color: $black;
+    outline: none;
+    padding: 1em;
+  }
+  &[type=submit] {
+    background: $brown;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-color: $brown;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+
