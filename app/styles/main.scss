@@ -11,6 +11,7 @@
 @import "columns";
 @import "splash";
 @import "form";
+@import "menu";
 
 section {
   width: 100%;
@@ -20,6 +21,7 @@ section {
   &.what, &.about, &.why, &.partners {
     background: $white;
   }
+
   &.contact {
     background: $black;
   }
@@ -30,36 +32,62 @@ section {
   color: $white;
 }
 
-
-.pullquote {
-  clear: left;
-  float: left;
-  position: relative;
-  margin-top: 0;
-  margin-left: -15.38462%;
-  width: 53.84615%;
-}
-
 figure {
   margin: 0;
+
   &.right {
     float: right;
     margin-right: -200px;
   }
-}
 
-figure img {
-  display: inline-block;
-  margin: 0.5em 1.5em;
-  position: relative;
   &.left {
     margin-left: -200px;
     float: left;
   }
+
+  figcaption {
+    font-family: $serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin: 0.5em 1.9em 0.55em;
+    width: 350px;
+  }
 }
 
 img {
+  display: inline-block;
+  margin: 0.5em 1.5em;
+  position: relative;
   width: 350px;
-  padding: 10px;
-  border: 1px solid $beige;
+}
+
+.partners {
+  text-align: center;
+
+  .wrap {
+    text-align: left;
+  }
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+
+    li {
+      margin: 1rem 0;
+      vertical-align: middle;
+      float: left;
+
+      img {
+        width: auto;
+        max-height: 60px;
+        filter: grayscale(100%);
+
+        &:hover {
+          filter: none;
+          transition: filter 0.4s ease-in-out;
+        }
+      }
+    }
+  }
 }
