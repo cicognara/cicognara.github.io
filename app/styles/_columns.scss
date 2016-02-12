@@ -1,0 +1,17 @@
+.columns {
+  column-width: 300px;
+  column-gap: 2.5em;
+  margin: 2.5em auto 0;
+  max-width: 910px;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    font-family: $serif;
+    font-size: 16px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}

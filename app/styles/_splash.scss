@@ -1,0 +1,56 @@
+body {
+  opacity: 0;
+
+  &.loaded {
+    opacity: 1;
+    transition: opacity 2s ease-in;
+  }
+}
+
+.intro {
+  background: $beige;
+  background: linear-gradient(to bottom, $beige, $white);
+  bottom: 0;
+  display: block;
+  height: 100vh;
+  &.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .wrap {
+    @include centerer;
+
+    padding: 30px;
+    border: 8px solid $black;
+    max-width: calc(100% - 50px);
+    width: 100%;
+    height: calc(100% - 50px);
+
+    .center {
+      @include centerer;
+
+      width: 100%;
+    }
+  }
+
+  .small {
+    color: $black;
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .italic {
+    font-style: italic;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+}
+
+.blank {
+  min-height: 100vh;
+}
