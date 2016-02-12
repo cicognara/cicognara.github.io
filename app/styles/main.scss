@@ -1,26 +1,65 @@
 // dependencies
 @import "normalize";
 @import "susy";
+@import "bourbon";
 
 // components
+@import "mixins";
+@import "variables";
 @import "grid";
-@import "colors";
+@import "typography";
+@import "columns";
+@import "splash";
+@import "form";
 
-.intro {
-  background: $beige;
+section {
+  width: 100%;
+  display: inline-block;
+  position: relative;
 
-  h1 {
-    display: block;
-    font: 34px/36px 'Playfair Display', Georgia, serif;
-    letter-spacing: .06em;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-
-    .small {
-      display: block;
-      font-size: 18px;
-      text-transform: none;
-    }
+  &.what, &.about, &.why, &.partners {
+    background: $white;
   }
+  &.contact {
+    background: $black;
+  }
+}
+
+.contact,
+.contact p {
+  color: $white;
+}
+
+
+.pullquote {
+  clear: left;
+  float: left;
+  position: relative;
+  margin-top: 0;
+  margin-left: -15.38462%;
+  width: 53.84615%;
+}
+
+figure {
+  margin: 0;
+  &.right {
+    float: right;
+    margin-right: -200px;
+  }
+}
+
+figure img {
+  display: inline-block;
+  margin: 0.5em 1.5em;
+  position: relative;
+  &.left {
+    margin-left: -200px;
+    float: left;
+  }
+}
+
+img {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid $beige;
 }
