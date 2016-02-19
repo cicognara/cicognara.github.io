@@ -78,6 +78,10 @@ img {
       vertical-align: middle;
       float: left;
 
+      a, a:hover {
+        box-shadow: none;
+      }
+
       img {
         width: auto;
         max-height: 60px;
