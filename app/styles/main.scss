@@ -117,8 +117,8 @@ img {
     -ms-animation: fadeOut 5s linear forwards;
     animation: fadeOut 5s linear forwards;
 
-    background: #ffe691;
-    border: 1px solid #f6db7b;
+    background: $red;
+    border: 1px solid $red;
   p {
     font-weight: bold;
     font-size: 16px;

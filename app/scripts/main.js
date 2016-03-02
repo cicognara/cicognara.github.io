@@ -47,7 +47,7 @@ var $contactForm = $("#contact-form");
 $contactForm.submit(function(e) {
     e.preventDefault();
     $.ajax({
-        url: '//formspree.io/axa.liauw@gmail.com',
+        url: '//formspree.io/info@cicognara.org',
         method: 'POST',
         data: $(this).serialize(),
         dataType: 'json',

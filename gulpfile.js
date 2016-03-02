@@ -71,7 +71,7 @@ gulp.task('images', function () {
 
 gulp.task('extras', function () {
   return gulp.src([
-    './app/*.*'
+    './app/*'
   ], {
     dot: true
   })
