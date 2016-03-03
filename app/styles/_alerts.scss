@@ -1,7 +1,7 @@
 .alert {
-  width: 100%;
+  width: 93%;
   position: absolute;
-  top: 105px;
+  top: 125px;
   margin: 0 auto;
   padding: 25px 15px;
   text-align: left;
@@ -18,8 +18,8 @@
   background: $brown;
 
   @include breakpoint(600px) {
-    width: 600px;
-    top: 95px;
+    width: 568px;
+    top: 105px;
   }
 
 
