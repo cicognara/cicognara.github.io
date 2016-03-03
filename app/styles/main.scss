@@ -99,12 +99,10 @@ img {
 .alert {
     width: 600px;
     position: absolute;
-    top: 180px;
+    top: 95px;
     margin: 0 auto;
     padding: 25px 15px;
     text-align: left;
-    border-radius: 5px;
-      box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.6);
     opacity: 0;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -117,34 +115,29 @@ img {
     -ms-animation: fadeOut 5s linear forwards;
     animation: fadeOut 5s linear forwards;
 
-    background: $red;
-    border: 1px solid $red;
+    background: $brown;
   p {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.2rem;
     margin: 0;
     padding: 0 10px 0 60px;
-    text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+    color: $black;
 
 
     &:before {
       text-align: center;
-      border: 3px solid rgba(255, 255, 255, 1);
+      border: 3px solid $black;
       margin-top: -17px;
       top: 50%;
       left: 20px;
       width: 30px;
       content: 'i';
       font-size: 30px;
-      color: rgba(255, 255, 255, 1);
+      color: $black;
       position: absolute;
       height: 30px;
       line-height: 30px;
       border-radius: 50%;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-      box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-
-
     }
   }
 }

@@ -47,7 +47,7 @@ var $contactForm = $("#contact-form");
 $contactForm.submit(function(e) {
     e.preventDefault();
     $.ajax({
-        url: '//formspree.io/info@cicognara.org',
+        url: '//formspree.io/aliauw@princeton.edu',
         method: 'POST',
         data: $(this).serialize(),
         dataType: 'json',
