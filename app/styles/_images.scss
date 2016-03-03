@@ -71,7 +71,15 @@ img {
       // margin: 1rem 0;
       vertical-align: middle;
       float: left;
+      display: inline;
       padding: 1rem;
+      max-height: 90px;
+
+      @include breakpoint($small) {
+        display: inline-block;
+        float: none;
+        width: 30%;
+      }
 
       @include breakpoint($medium) {
         padding: 0.3rem;
@@ -88,6 +96,10 @@ img {
         width: auto;
         max-height: 60px;
         filter: grayscale(100%);
+
+        @include breakpoint($small) {
+          filter: none;
+        }
 
         &:hover {
           filter: none;
