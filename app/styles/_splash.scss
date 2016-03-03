@@ -15,6 +15,7 @@ body {
   position: fixed;
   display: block;
   height: 100vh;
+
   &.scrolled {
     position: fixed;
     top: 0;
@@ -35,12 +36,14 @@ body {
       border: 8px solid $black;
     }
 
+
     .center {
       @include centerer;
 
       width: 100%;
     }
   }
+
   .wrap:after, .wrap:before {
     top: 100%;
     left: 50%;
@@ -52,18 +55,22 @@ body {
     pointer-events: none;
   }
 
-  .wrap:after {
-    border-color: rgba(0, 0, 0, 0);
-    border-top-color: $white;
-    border-width: 15px;
-    margin-left: -15px;
+  @include breakpoint($medium) {
+    .wrap:after {
+      border-color: rgba(0, 0, 0, 0);
+      border-top-color: $white;
+      border-width: 15px;
+      margin-left: -15px;
+    }
+
+    .wrap:before {
+      border-color: rgba(194, 225, 245, 0);
+      border-top-color: $black;
+      border-width: 26px;
+      margin-left: -26px;
+    }
   }
-  .wrap:before {
-    border-color: rgba(194, 225, 245, 0);
-    border-top-color: $black;
-    border-width: 26px;
-    margin-left: -26px;
-  }
+
 
   .small {
     display: block;
