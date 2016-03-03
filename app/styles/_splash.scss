@@ -27,10 +27,13 @@ body {
     @include centerer;
 
     padding: 30px;
-    border: 8px solid $black;
     max-width: calc(100% - 100px);
     width: 100%;
     height: calc(100% - 100px);
+
+    @include breakpoint($medium) {
+      border: 8px solid $black;
+    }
 
     .center {
       @include centerer;
@@ -63,10 +66,7 @@ body {
   }
 
   .small {
-    color: $black;
     display: block;
-    font-size: 24px;
-    font-weight: 400;
   }
 
   .italic {
