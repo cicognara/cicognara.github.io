@@ -16,7 +16,7 @@ $xlarge: 1150px;
   padding: 01rem;
   width: 100%;
 
-  @include breakpoint($xlarge) {
+  @include breakpoint($large) {
     @include container;
   }
 }
