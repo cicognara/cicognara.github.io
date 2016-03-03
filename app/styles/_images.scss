@@ -42,7 +42,12 @@ img {
   display: block;
   margin: 0 auto;
   position: relative;
-  width: 350px;
+  max-width: 100%;
+
+  @include breakpoint($small) {
+    width: 350px;
+  }
+
 
   @include breakpoint($medium) {
     display: inline-block;
@@ -65,8 +70,7 @@ img {
     li {
       // margin: 1rem 0;
       vertical-align: middle;
-      float:left;
-
+      float: left;
       padding: 1rem;
 
       @include breakpoint($medium) {
@@ -74,6 +78,7 @@ img {
         display: inline;
         float: none;
       }
+
 
       a, a:hover {
         box-shadow: none;
