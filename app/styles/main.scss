@@ -1,6 +1,7 @@
 // dependencies
 @import "normalize";
 @import "susy";
+@import "breakpoint";
 @import "bourbon";
 
 // components
@@ -12,6 +13,7 @@
 @import "splash";
 @import "form";
 @import "menu";
+@import "images";
 
 section {
   width: 100%;
@@ -32,74 +34,10 @@ section {
   color: $white;
 }
 
-figure {
-  margin: 0;
-
-  &.right {
-    float: right;
-    margin-right: -200px;
-  }
-
-  &.left {
-    margin-left: -200px;
-    float: left;
-  }
-
-  figcaption {
-    font-family: $serif;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    margin: 0.5em 1.9em 0.55em;
-    width: 350px;
-  }
-}
-
-img {
-  display: inline-block;
-  margin: 0.5em 1.5em;
-  position: relative;
-  width: 350px;
-}
-
-.partners {
-  text-align: center;
-
-  .wrap {
-    text-align: left;
-  }
-
-  ul {
-    list-style: none;
-    display: inline-block;
-    padding: 0;
-
-    li {
-      margin: 1rem 0;
-      vertical-align: middle;
-      float: left;
-
-      a, a:hover {
-        box-shadow: none;
-      }
-
-      img {
-        width: auto;
-        max-height: 60px;
-        filter: grayscale(100%);
-
-        &:hover {
-          filter: none;
-          transition: filter 0.4s ease-in-out;
-        }
-      }
-    }
-  }
-}
-
 .alert {
-    width: 600px;
+    width: 100%;
     position: absolute;
-    top: 95px;
+    top: 105px;
     margin: 0 auto;
     padding: 25px 15px;
     text-align: left;
@@ -116,6 +54,11 @@ img {
     animation: fadeOut 5s linear forwards;
 
     background: $brown;
+
+    @include breakpoint(600px) {
+      width: 600px;
+      top: 95px;
+    }
   p {
     font-weight: bold;
     font-size: 1.2rem;

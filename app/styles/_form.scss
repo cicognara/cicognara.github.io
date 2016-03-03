@@ -1,3 +1,10 @@
+.contact .wrap {
+  @include breakpoint(600px) {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
 form {
   margin-bottom: 50px;
 }

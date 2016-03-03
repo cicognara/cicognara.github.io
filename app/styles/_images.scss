@@ -1,0 +1,94 @@
+figure {
+  margin: 0;
+
+  &.right {
+    clear: both;
+    margin: 0;
+
+    @include breakpoint($medium) {
+      float: right;
+    }
+
+
+    @include breakpoint($large) {
+      margin-right: -200px;
+    }
+  }
+
+  &.left {
+    clear: both;
+    margin: 0;
+
+    @include breakpoint($medium) {
+      float: left;
+    }
+
+
+    @include breakpoint($large) {
+      margin-left: -200px;
+    }
+  }
+
+  figcaption {
+    font-family: $serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 0.5em 1.9em 0.55em;
+    width: 350px;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 350px;
+
+  @include breakpoint($medium) {
+    display: inline-block;
+    margin: 0.5em 1.5em;
+  }
+}
+
+.partners {
+  text-align: center;
+
+  .wrap {
+    text-align: left;
+  }
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+
+    li {
+      // margin: 1rem 0;
+      vertical-align: middle;
+      float:left;
+
+      padding: 1rem;
+
+      @include breakpoint($medium) {
+        padding: 0.3rem;
+        display: inline;
+        float: none;
+      }
+
+      a, a:hover {
+        box-shadow: none;
+      }
+
+      img {
+        width: auto;
+        max-height: 60px;
+        filter: grayscale(100%);
+
+        &:hover {
+          filter: none;
+          transition: filter 0.4s ease-in-out;
+        }
+      }
+    }
+  }
+}
